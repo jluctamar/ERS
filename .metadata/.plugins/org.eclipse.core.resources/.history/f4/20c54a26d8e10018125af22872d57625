@@ -1,0 +1,49 @@
+package com.revature;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.revature.dao.EmployeeDAOImpl;
+import com.revature.dao.ReimbursementDAOImpl;
+import com.revature.models.Employee;
+import com.revature.models.Reimbursement;
+import com.revature.services.ReimbursementService;
+
+//contain the main method for the application
+public class ERS_Driver {
+
+	public static void main(String[] args) {
+		
+		ReimbursementDAOImpl test = new ReimbursementDAOImpl();
+		List<Reimbursement> record = new ArrayList<>();
+		EmployeeDAOImpl emp1 = new EmployeeDAOImpl();
+		EmployeeDAOImpl emp2 = new EmployeeDAOImpl();
+		Employee emp = new Employee();
+		boolean emp3;
+		
+		
+		ReimbursementService fill = new ReimbursementService();
+		
+		fill.createReimbursement(500, 4, 1, "Quality in weekend stay");
+		fill.createReimbursement(22, 4, 3, "Company Lunch at Outback");
+		fill.createReimbursement(24, 4, 0, "office supplies");
+		fill.createReimbursement(4, 4, 0, "office Coffee Machine");
+		fill.createReimbursement(1000, 4, 0, "Sleep");
+		
+		fill.createReimbursement(300, 3, 2, "AA Flight to England");
+		fill.createReimbursement(450, 3, 1, "Stay at the Buckingham Palace");
+		fill.createReimbursement(65, 3, 3, "All you can Eat Buffet");
+		fill.createReimbursement(140, 3, 0, "Spa Treatment");
+		
+		fill.createReimbursement(400, 2, 0, "TypeWriter");
+		fill.createReimbursement(350, 2, 0, "Particle Accelerator");
+		fill.createReimbursement(20000, 2, 0, "SuperComputer");
+		fill.createReimbursement(300, 2, 0, "SmartBoard");
+		
+		
+		
+		
+		
+	}
+	
+}

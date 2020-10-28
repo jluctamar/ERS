@@ -1,0 +1,31 @@
+package com.revature.services;
+
+import com.revature.dao.EmployeeDAOImpl;
+import com.revature.models.Employee;
+
+//Service class to access the DAO methods 
+public class EmployeeServices {
+
+	private EmployeeDAOImpl empDAO = new EmployeeDAOImpl();
+
+	public Employee getEmployee(int Id) {
+		return empDAO.getEmployee(Id);
+	}
+	
+	//Checks credentials against the database user table returns Employees info if valid
+	public Employee getEmployee(String username, String password) {
+
+		// Check if the employees credentials are valid
+		if (validCredentials(username, password)) {
+			return empDAO.getEmployee(username, password);
+		} else {
+			System.out.println("Invalid Credential, user not found.");
+			return null;
+		}
+	}
+
+	//validates employees credentials 
+	public boolean validCredentials(String username, String password) {
+		return empDAO.checkEmployee(username, password);
+	}
+}

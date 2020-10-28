@@ -1,0 +1,47 @@
+
+#reimbWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 64px;
+    overflow-y: auto;
+}
+
+#pageTitle {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+thead th {
+    position: sticky;
+    background-color: #F96A00;
+    top: -65px;
+    margin-top:2px;
+}
+
+#actionBtns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+#createReimbBtn {
+    width: fit-content;
+    font-size: 25px;
+	border-radius: 5%;
+    border: solid 2px #4CE5CF;
+	background-color: rgba(255, 255, 255, 0);
+    padding: 5px 10px 5px 10px;
+	cursor: pointer;
+    
+}
+
+#createReimbBtn:hover {
+	background-color: #4CE5CF;
+	color: white;
+	transition: .8s ease;
+} 
+
+
+#apprDenyBtns {
+
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Expense Reimbursement System</title>
+    <style>
+        img {
+            padding-top: 6%;
+            padding-left: 6%;
+            padding-bottom: 6%;
+            padding-right: 6%;
+        }
+        html {
+            background-color: #fda96c;
+        }
+        #hand1 {
+            position: absolute;
+            top: 8px;
+            left: 1000px;
+        }
+        #hand2 {
+            position: absolute;
+            top: 415px;
+            left: 1380px;
+        }
+        #title {
+            position: absolute;
+            top: 300px;
+            letter-spacing: -5px;
+            left: 300px;
+            color: white;
+            font-family: 'Rubik Mono One', sans-serif;
+            font-size: 70px;
+            text-align: center;
+        }
+        #description{
+            color:white;
+            position: absolute;
+            letter-spacing: 5px;
+            top:610px;
+            left:300px;
+            font-size:20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        #signup{
+            position: absolute;
+            top:750px;
+            left: 500px;
+            font-size: 25px;
+            background-color: #76E52E;
+            border-radius: 5%;
+            border: solid 2px #76E52E;
+            padding:.2%;
+            cursor: pointer;
+        }
+        #login{
+            position: absolute;
+            top:750px;
+            left:700px;
+            font-size: 25px;
+            border-radius: 5%;
+            border: solid 2px #4CE5CF;
+            background-color: rgba(255,255,255, 0);
+            padding:5px 10px 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Rubik+Mono+One" rel="stylesheet">
+    <link href="./css/animate.css">
+
+   
+
+</head>
+
+<body>
+    <!--Page Background and Illustrations-->
+    <img class ="fadeInUp animated" id='hand2' src="./img/RecieptHand.png" alt="">
+    <img class ="fadeInDown animated" id='hand1' src="./img/MoneyHand.png" alt="">
+    <img src="./img/background.jpg" alt="">
+
+    <div class="content jumbotron fadeInLeft animated">
+        <p id="title"> Fast &amp; Easy<br>
+            Expense <br>
+            Reimbursement</p>
+        <p id="description"> The CALYPSO application is used to reimburse J&amp;M <br>
+            employees for out of pocket cost and fees that are <br>
+            directly related to J&M and our expense requirements.</p>
+    </div>
+
+    <button id="signup" class="btn btn-primary">SIGNUP</button>
+
+    <button id="login" class="btn btn-primmary">LOGIN</button>
+
+    <!--JAVASCRIPT/JQUERY CDN & EXTERNAL LINKS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+    <script src="js/reimbursement.js"></script>
+</body>
+
+</html>

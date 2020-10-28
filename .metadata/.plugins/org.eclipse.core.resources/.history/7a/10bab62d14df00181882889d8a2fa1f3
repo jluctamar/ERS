@@ -1,0 +1,34 @@
+package com.revature.services;
+
+import com.revature.dao.ReimbursementDAO;
+import com.revature.dao.ReimbursementDAOImpl;
+import com.revature.models.Employee;
+
+//Service class to access the DAO methods 
+public class ReimbursementService {
+
+	private ReimbursementDAO reimbDAO = new ReimbursementDAOImpl();
+
+	
+	public void createReimbursement(double amount, int author, int type, String description) {
+		 reimbDAO.createReimbursement(amount, description, type, author);
+	}
+	
+	public void updateReimbursement(Employee mng, int reimbID, int status) {
+		
+		//Condition: User must be a manager; record must exist
+		if((mng.getUserRoleID() == 2) && (reimbDAO.checkSingleRecord(reimbID))){		
+			reimbDAO.updateReimbursement(reimbID, status);
+			System.out.println("Update Successfull");
+		}else {
+			System.out.println("Update Unsuccessful,");
+		}
+		
+				
+				
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,25 @@
+<nav class="navbar navbar-light">
+	<a class="navbar-brand" href="#" style="color: white;"> CALYPSO
+		LOLOLOLOL</a> <a href="#" id="logout" style="color: white;">Logout</a>
+</nav>
+
+<div>
+	<h4>REIMBURSEMENTS</h4>
+
+	<table id="reimbTable" class="display">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Type</th>
+				<th>Amount</th>
+				<th>Description</th>
+				<th>Status</th>
+			</tr>
+		</thead>
+		<tbody>
+
+		</tbody>
+	</table>
+	<br>
+	<button id="createReimb">New Reimbursement</button>
+</div>

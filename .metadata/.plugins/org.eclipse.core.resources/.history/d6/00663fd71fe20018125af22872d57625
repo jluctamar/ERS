@@ -1,0 +1,12 @@
+<input type="date" id="date" placeholder="">
+<input type="text" id="description" placeholder="Insert description here...">
+
+<select name="type" id="type">
+<option value="Lodging"></option>
+<option value="Travel"></option>
+<option value="Food"></option>
+<option value="other"></option>
+</select>
+
+<input type="text-area" placeholder="description">
+<input type="number" placeholder="amount">

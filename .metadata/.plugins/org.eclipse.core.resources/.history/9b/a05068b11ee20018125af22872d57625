@@ -1,0 +1,13 @@
+<input type="date" id="date" placeholder="">
+<br>
+<textarea name="description" id="description" cols="30" rows="10"></textarea>
+<br>
+<select name="type" id="type">
+<option value="Lodging">Lodging</option>
+<option value="Travel">Travel</option>
+<option value="Food">Food</option>
+<option value="other">Other</option>
+</select>
+<br>
+<input type="number" placeholder="amount" id="amount">
+<button type="submit" id="add"> Add</button>
