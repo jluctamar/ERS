@@ -583,7 +583,7 @@ function profileFunctionality() {
     var row = $(this).closest("tr");
     var empId = row[0].cells[1].innerHTML;
 
-    //udpateRole(empId);
+    /* UPDATE AND EMPLOYEES ROLE */
 
     // console.log to tell that we are entering this function
     console.log("Successfully inside of changeRole()");
@@ -615,6 +615,7 @@ function profileFunctionality() {
     };
     return false;
   });
+  
 }
 
 // function updateRole(userId) {}
